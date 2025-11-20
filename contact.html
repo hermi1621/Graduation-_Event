@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Graduation Event</title>
+</head>
+<body>
+
+<header>
+    <center>
+        <h1>Contact & Registration</h1>
+    </center>
+    <div align="right">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </div>
+</header>
+
+<center>
+<section>
+    <h2>Register for the Event</h2>
+
+    <form>
+        <!-- Full Name -->
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name" 
+        pattern="[A-Za-z ]{1,70}" 
+       placeholder="Enter your full name" 
+       title="Name can contain only letters and spaces, up to 70 characters." ><br><br>
+
+        <!-- Email -->
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+           placeholder="example@domain.com" title="Email must start with a letter "required><br><br>
+
+        <!-- Student ID -->
+        <label for="studentid">Student ID</label><br>
+        <input type="text" id="studentid" name="studentid"><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" 
+         pattern="\+251[0-9]{9}" 
+       placeholder="+251911337450" 
+       title="Phone must start with +251 and be followed by exactly 9 digits" 
+       required><br><br>
+
+        <!-- Gender -->
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="male"> Male<br><br>
+
+        <!-- Department / Major -->
+        <label>Department / Major</label><br>
+        <input type="radio" name="department" value="cs"> Computer Science
+        <input type="radio" name="department" value="ba"> Business Administration<br><br>
+
+        <!-- Year / Batch -->
+        <label for="year">Year / Batch</label><br>
+        <input type="text" id="year" name="year" value="26/2027"><br><br>
+
+        <!-- Number of Guests -->
+        <label for="guests">Number of Guests (max 5)</label><br>
+        <input type="number" id="guests" name="guests" min="0" max="5"><br><br>
+
+        <!-- Your Interest -->
+        <label>Role in Graduation</label><br>
+        <input type="checkbox" name="interest" value="Attendee"> Attendee
+        <input type="checkbox" name="interest" value="speaker"> speaker
+        <input type="checkbox" name="interest" value="performer"> performer
+        <input type="checkbox" name="interest" value="organizer"> organizer<br>
+        <!-- Message / Special Requests -->
+        <label>Message / Special Requests</label><br>
+        <textarea name="message" rows="5"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</section>
+</center>
+
+<footer>
+    <center>
+        <p>© 2025 Graduation Event</p>
+    </center>
+</footer>
+
+</body>
+</html>
